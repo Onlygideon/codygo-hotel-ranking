@@ -1,31 +1,13 @@
-# DriveHub
+# Hotel-Ranking-Api
 
-## This is a backend API for a driving school company web app.
+## This is a backend API for a hotel listing web app.
 
 ## This API has endpoints for the following functionalities:-
 
-### Add driver
+### Add Hotel
 
-### Add student
+### Fetch all hotels
 
-### Fetch all drivers
+### Update hotel
 
-### Fetch all students
-
-### Fetch all students currently been trained under a particular driver
-
-### Fetch all students who completed their training under a particular driver
-
-### Update student info
-
-### Remove driver
-
-### Add Student Rating for a driver
-
-### Add Student Complaint for a driver
-
-### Fetch all Complaints directed at a driver
-
-### Add Comment for a product
-
-### Driver average rating
+### Remove hotel

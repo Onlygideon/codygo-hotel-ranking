@@ -1,0 +1,720 @@
+{
+	"info": {
+		"_postman_id": "d0f97d7e-f894-4d42-bcec-dff4a5bd8d7a",
+		"name": "Hotels",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15715947"
+	},
+	"item": [
+		{
+			"name": "fetchAllHotels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotels"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetchAllHotels - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotels"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "784"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"310-bHP9ud6XzXa4j2PUyyYcLbJxO9Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:45:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6390d07608ac87bdbb508219\",\n        \"name\": \"happy hotel\",\n        \"city\": \"lagos\",\n        \"country\": \"nigeria\",\n        \"address\": \"ikorodu\",\n        \"createdAt\": \"2022-12-07T17:42:14.954Z\",\n        \"updatedAt\": \"2022-12-07T17:53:00.099Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6390e613a53931fd9b545acf\",\n        \"name\": \"yea hotel\",\n        \"city\": \"lagos\",\n        \"country\": \"nigeria\",\n        \"address\": \"ikeja\",\n        \"createdAt\": \"2022-12-07T19:14:27.947Z\",\n        \"updatedAt\": \"2022-12-07T19:14:27.947Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"6391020f17cd90b9255ef917\",\n        \"name\": \"berry hotel\",\n        \"city\": \"abuja\",\n        \"country\": \"nigeria\",\n        \"address\": \"ikeja\",\n        \"createdAt\": \"2022-12-07T21:13:51.656Z\",\n        \"updatedAt\": \"2022-12-07T21:13:51.656Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"639102f717cd90b9255ef923\",\n        \"name\": \"samphire hotel\",\n        \"city\": \"new york\",\n        \"country\": \"usa\",\n        \"address\": \"queens\",\n        \"createdAt\": \"2022-12-07T21:17:43.812Z\",\n        \"updatedAt\": \"2022-12-07T21:17:43.812Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addHotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"SAMPHIRE hotel\",\r\n    \"city\": \"NEW YORK\",\r\n    \"country\": \"USA\",\r\n    \"address\": \"QUEENS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/hotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addHotel - success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SAMPHIRE hotel\",\r\n    \"city\": \"NEW YORK\",\r\n    \"country\": \"USA\",\r\n    \"address\": \"QUEENS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/hotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-yeN9pRDbVeHofpv6Jmn4fEieMZg\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:17:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"samphire hotel\",\n    \"city\": \"new york\",\n    \"country\": \"usa\",\n    \"address\": \"queens\",\n    \"_id\": \"639102f717cd90b9255ef923\",\n    \"createdAt\": \"2022-12-07T21:17:43.812Z\",\n    \"updatedAt\": \"2022-12-07T21:17:43.812Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "fetchHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotel/:hotelId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						":hotelId"
+					],
+					"variable": [
+						{
+							"key": "hotelId",
+							"value": "639102f717cd90b9255ef923"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "fetchHotel - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotel/:hotelId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								":hotelId"
+							],
+							"variable": [
+								{
+									"key": "hotelId",
+									"value": "639102f717cd90b9255ef923"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-DX91DgpS9JN57jGNZ3Z0xuQ/Z6U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:55:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"639102f717cd90b9255ef923\",\n    \"name\": \"diamonds hotel\",\n    \"city\": \"new york\",\n    \"country\": \"usa\",\n    \"address\": \"queens\",\n    \"createdAt\": \"2022-12-07T21:17:43.812Z\",\n    \"updatedAt\": \"2022-12-07T21:54:53.655Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteHotel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotel/:hotelId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						":hotelId"
+					],
+					"variable": [
+						{
+							"key": "hotelId",
+							"value": "639102f717cd90b9255ef923"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteHotel",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotel/:hotelId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								":hotelId"
+							],
+							"variable": [
+								{
+									"key": "hotelId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e-jlbIMx/ZRwdI0S2iG8pAxpceR8A\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:55:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Hotel with the id of 639102f717cd90b9255ef923 has been deleted"
+				}
+			]
+		},
+		{
+			"name": "updateHotel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"diamonds hotel\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/hotel/:hotelId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						":hotelId"
+					],
+					"variable": [
+						{
+							"key": "hotelId",
+							"value": "639102f717cd90b9255ef923"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateHotel - success",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"diamonds hotel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/hotel/:hotelId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								":hotelId"
+							],
+							"variable": [
+								{
+									"key": "hotelId",
+									"value": "639102f717cd90b9255ef923"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-DX91DgpS9JN57jGNZ3Z0xuQ/Z6U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:54:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"639102f717cd90b9255ef923\",\n    \"name\": \"diamonds hotel\",\n    \"city\": \"new york\",\n    \"country\": \"usa\",\n    \"address\": \"queens\",\n    \"createdAt\": \"2022-12-07T21:17:43.812Z\",\n    \"updatedAt\": \"2022-12-07T21:54:53.655Z\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "filterHotelByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotel/name-filter/by?name=YEA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						"name-filter",
+						"by"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "YEA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filterHotelByName - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotel/name-filter/by?name=YEA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								"name-filter",
+								"by"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "YEA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "194"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c2-Vmo6us0bKZp11w8Otpwzc0moFAY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:53:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6390e613a53931fd9b545acf\",\n        \"name\": \"yea hotel\",\n        \"city\": \"lagos\",\n        \"country\": \"nigeria\",\n        \"address\": \"ikeja\",\n        \"createdAt\": \"2022-12-07T19:14:27.947Z\",\n        \"updatedAt\": \"2022-12-07T19:14:27.947Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "filterHotelByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotel/city-filter/by?city=ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						"city-filter",
+						"by"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ab"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filterHotelByCity - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotel/city-filter/by?city=ab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								"city-filter",
+								"by"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "ab"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-bjqU1zn0HuRQz/Qe31rbD94gPa8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:53:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"6391020f17cd90b9255ef917\",\n        \"name\": \"berry hotel\",\n        \"city\": \"abuja\",\n        \"country\": \"nigeria\",\n        \"address\": \"ikeja\",\n        \"createdAt\": \"2022-12-07T21:13:51.656Z\",\n        \"updatedAt\": \"2022-12-07T21:13:51.656Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "filterHotelByCountry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hotel/country-filter/by?country=us",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hotel",
+						"country-filter",
+						"by"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "us"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "filterHotelByCountry - success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hotel/country-filter/by?country=us",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hotel",
+								"country-filter",
+								"by"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c6-R2kpWZrneMXJ3yQaYtNAZaUUEYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Dec 2022 21:53:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"639102f717cd90b9255ef923\",\n        \"name\": \"diamond hotel\",\n        \"city\": \"new york\",\n        \"country\": \"usa\",\n        \"address\": \"queens\",\n        \"createdAt\": \"2022-12-07T21:17:43.812Z\",\n        \"updatedAt\": \"2022-12-07T21:46:45.220Z\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		}
+	]
+}

@@ -8,6 +8,8 @@
 
 ### Fetch all hotels
 
+### Fetch a specific hotel
+
 ### Update hotel
 
 ### Remove hotel
